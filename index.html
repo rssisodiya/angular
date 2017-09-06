@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8">
+		<title>engApp</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="assets/js/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="assets/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+	
+		<nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="#">engApp</a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse pull-right">
+			  <ul class="nav navbar-nav">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#login">Login</a></li>
+				<li><a href="#contact">Contact</a></li>
+			  </ul>
+			</div><!--/.nav-collapse -->
+		  </div>
+		</nav>
+		<div class="container" style="min-height:600px;">
+			<div class="row">
+				<div class="col-lg-12" style="margin-top:115px;">
+					<div ng-view=""></div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<p class="text-muted" style="margin-top:30px;">Copyright@ 2017.</p>
+			</div>
+		</footer>
+		<!-- Footer code end here -->
+		
+		<!-- include angular.min.js file -->
+		<script src="assets/angular/angular.min.js"></script>
+		
+		<!-- app config -->
+		<script type="text/javascript" src=	"app/app.routes.js"></script>
+		
+		<!-- Controllers -->
+		<script type="text/javascript" src="app/controller/homeController.js"></script>
+		<script type="text/javascript" src="app/controller/loginController.js"></script>
+		<script type="text/javascript" src="app/controller/contactController.js"></script>
+		
+		<style>
+		.footer {
+			position: relative;
+			bottom: 0;
+			width: 100%;
+			height: 60px;
+			background-color: #f5f5f5;
+		}
+		</style>
+	</body>
+</html>

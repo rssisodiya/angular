@@ -1,0 +1,1 @@
+articleDirective.js

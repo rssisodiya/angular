@@ -1,0 +1,11 @@
+<center>
+<div class="register">
+	<h1>{{message}}</h1>
+	<form name="register" >
+		<label>Name</label><input type="text" name="name" ng-model="name" required> <br />  <br />
+		<label>Email</label><input type="email" name="email" ng-model="email" required> <br />  <br />
+		<label>Phone</label><input type="text" name="phone" ng-model="phone" required> <br />  <br />
+		<input type="submit" value="Submit" name="submit" ng-click="submit()">
+	</form>
+	<h4>{{response}}</h4>
+</div>
