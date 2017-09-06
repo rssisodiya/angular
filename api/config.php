@@ -1,5 +1,5 @@
 <?php
-	//Database setting.
+	//Local DB Conncetion setting.
 	$dbhost = 'localhost';
 	$dbuser = 'root';
 	$dbpass = '';
